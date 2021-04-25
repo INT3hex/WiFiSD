@@ -1,0 +1,189 @@
+Serial Console (orange|gelb|grün)  8N1 38400
+
+------------------------------------------------------------
+
+KA Boot 04240806
+
+scu: 11c33303,00000000,00040404,00009f00,1
+Status 20200804
+
+Hit to stop :  2 1 0
+Status 20200804
+RCA0 68, RCA1 b3
+....reading program.bin
+......................................go E00000
+clk: PLL (div=9f00)
+scu: 11c33303,00000000,00040404,00009f00,1
+Status 20200804
+******          Program Mode (GEN3)              ******
+Status 20200804
+RCA0 68, RCA1 b3
+..<mmc1>..<mmc1>reading autoload.tbl
+...........reading delchain.dis
+...........reading u-boot.bin
+...........reading image3
+............reading preprog_chk.bin
+...........found image3, start program.
+..reading image3
+......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+2664833 bytes read
+...........................................................................................................reading initramfs3.gz
+............found initramfs3.gz, start program.
+..reading initramfs3.gz
+......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+2662816 bytes read
+...........................................................................................................reading mtd_jffs2.bin
+............found mtd_jffs2.bin, start program.
+..reading mtd_jffs2.bin
+...........................................................................................................................................................................................................................................................................
+1048576 bytes read
+....................................
+Hit to stop :  2 1 0
+go 208000
+<4>(192-96-1)
+console [ttyS0] enabled
+Mount-cache hash table entries: 512
+NET: Registered protocol family 16
+bio: create slab <bio-0> at 0
+cfg80211: Calling CRDA to update world regulatory domain
+NET: Registered protocol family 2
+TCP: Hash tables configured (established 1024 bind 1024)
+TCP reno registered
+ttyS0 at MMIO 0xa0004000 (irq = 1) is a KA2000
+msgmni has been set to 58
+loop: module loaded
+TCP cubic registered
+NET: Registered protocol family 17
+lib80211: common routines for IEEE802.11 drivers
+
+starting pid 27, tty '/dev/console': '/etc/init.d/rcS'
+KeyASIC WifiSD console ...
+Sun Jan  1 00:00:00 UTC 2012
+ka2000_sdhc: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+(0>0)switch_modules
+max_blk_size=512, max_blk_count=8, max_req_size=32768
+init bomb irq
+req irq 40 (1000000)
+req irq 43 (40)
+req irq 41 (43)
+ka_sdhc_drv_init
+bw = 22
+mmc0: new SDHC card at address b368
+mmcblk0: mmc0:b368 CAR 15.0 GiB 
+ mmcblk0:bootsec @ 2000
+ p1
+FAT sec 7f8 sz 3c04 #2 rtdir 8000 csz 10
+delete program.bin so that it will not program again
+FAT sec 7f8 sz 3c04 #2 rtdir 8000 csz 10
+rm program.bin
+sync to SD
+sync done
+wsd to sd
+Error for wireless request "Set Frequency" (8B04) :
+    SET failed on device mlan0 ; No such device.
+ifconfig: mlan0: error fetching interface information: Device not found
+ifconfig: mlan0: error fetching interface information: Device not found
+ifconfig: mlan0: error fetching interface information: Device not found
+mlan0     No such device
+
+mlan0     no frequency information.
+
+Firmware=V1.6
+run autorun_fu.sh
+wsd to sd
+wsd to sd
+FAT sec 7f8 sz 3c04 #2 rtdir 8000 csz 10
+Start Hostapd for finishing firmware upgrade
+Success! Set GPlus-Enable :=NO
+/usr/bin/kcard_app.sh: start
+KCARD: Notify driver about pid 116
+(0>1)KCARD: Log = 0, Diff Disable, Path /tmp/filediff
+KCARD: Debounce = 1, WiFi Hide Disable, Skip Disable
+Success! Set GPlus-Enable :=NO
+Can not read wsd.conf
+Can not read wsd.conf
+KCARD: waitting for sig
+..setup AP Firmware Upgrade start
+rmmod: can't unload 'ar6000': unknown symbol in module, or unknown parameter
+
+sw c7:b368 (0-0)
+sw c10:b3680000 (0-0)
+CIDo: 0000aac9 00000000 41520000 534b5343
+CIDn: 71d500df 1a000010 20204344 53454a74
+sw c7:b3680000 (0-0)ifconfig: SIOCGIFFLAGS: No such device
+dcim c 8 @a060, f:27f8 (off 4ff01c)
+Folder: 199_WIFIWSD00003 (5f393931 49464957)
+Img1: WSD00003 (30445357 33303030 sz 79cdh)
+user_dir:(5f333231 20505446)(00000000 00000000)
+bomb reg 27f8 - 63fc
+KCARD: get_Kcard_app cmd 8 - KCARD: KCARD_SIG_NO_IMGS(1>0)
+KCARD: kcard_app_act - KCARD: KCARD_SIG_NO_IMGS
+FAT sec 7f8 sz 3c04 #2 rtdir 8000 csz 10
+mmcblk0p1 mounted
+KCARD: check_ctrl_folder_exist: Recovery dir /mnt/sd/DCIM/199_WIFI/
+Control folder create
+fat_alloc_new_dir 0
+fat_alloc_new_dir 0
+fat_alloc_new_dir 0
+fat_alloc_new_dir 0
+sdio wakeuplo        no wireless extensions.
+
+KCARD: check_ctrl_folder_exist: Recovery 1 
+ifconfig: SIOCGIFFLAGS: No such device
+mmc1: new SDIO card at address 0001
+
+AR6000: configuration opcode 7 is only used for RTOS systems, not Linux systems
+ath6k/AR6003/hw2.1.1/athwlan.bin firmware will be loaded
+KCARD: check_ctrl_folder_exist umount & mount
+AR6K: ** HIF layer does not support scatter requests (17) 
+wmi_control_rx() : Unknown id 0x101e
+FAT sec 7f8 sz 3c04 #2 rtdir 8000 csz 10
+argc 1, argv[0] = instant_upload_clean
+INUP_CLEAN: Log Level = 0
+dcim c 8 @a060, f:27f8 (off 4ff01c)
+Folder: 199_WIFIWSD00003 (5f393931 49464957)
+Img1: WSD00003 (30445357 33303030 sz 79cdh)
+user_dir:(5f333231 20505446)(00000000 00000000)
+ctrlimg c 1c0183 @1c0b810, f:5ffb (off bff608)
+
+3 c 1c0187-1c018b @1c0b850 f:5ffb(o:7)
+fat cnt 4, x0, pBuf1 c17d2400, pBuf2 0(0)
+misc c 1c0184 @1c0b820
+bomb reg2 1c0b820 - 1c0b825
+bomb reg 27f8 - 63fc
+st 1c0181, 1:7, 2:0, 3:0, 4:0, 5:0
+(0>4)KCARD: waitting for sig
+(4>5)(5>0)KCARD: get_Kcard_app cmd 7 - KCARD: KCARD_SIG_UPDATED
+KCARD: kcard_app_act - KCARD: KCARD_SIG_UPDATED
+KCARD: waitting for sig
+
+channel hint set to 0
+commit
+Add Filter 0 = 01:00:5e:00:00:01
+Keep Filter 0 = 01:00:5e:00:00:01
+Keep Filter 0 = 01:00:5e:00:00:01
+KCARD: waitting for sig
+KCARD: Get Pipe FD 3 Read Len 11 [Update list]
+KCARD: treecheck
+KCARD: No files changes
+KCARD: treecheck done
+start boa
+[01/Jan/2012:00:00:46 +0000] boa: server version Boa/0.94.14rc21
+[01/Jan/2012:00:00:46 +0000] boa: server built Feb 25 2013 at 15:18:57.
+[01/Jan/2012:00:00:46 +0000] boa: starting server pid=207, port 80
+/usr/bin/kcard_app.sh: stop
+
+Please press Enter to activate this console. 
+
+starting pid 210, tty '/dev/ttyS0': '-/bin/ash '
+# ls
+[1;34mbin[0m             [1;36minit[0m            [1;34mproc[0m            [0;0mts_version.inc[0m
+[0;0mconfig_value[0m    [1;34mlib[0m             [1;34mroot[0m            [1;34musr[0m
+[1;34mdev[0m             [1;36mlinuxrc[0m         [1;34msbin[0m            [1;34mvar[0m
+[1;34metc[0m             [1;34mlost+found[0m      [1;34msys[0m             [1;34mwww[0m
+[1;34mhome[0m            [1;34mmnt[0m             [1;34mtmp[0m
+# cat ts_version.inc
+Build Date : 2013/02/25 15:23:14
+Revision : V1.6
+# 

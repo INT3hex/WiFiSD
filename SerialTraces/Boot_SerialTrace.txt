@@ -1,0 +1,108 @@
+KA Boot 04240806
+
+scu: 11c33303,00000000,00040404,00009f00,1
+Status 20200804
+
+Hit to stop :  2 1 0
+Status 20200804
+RCA0 68, RCA1 b3
+....reading program.bin
+...........<mmc1>go 208000
+<4>(192-96-1)
+console [ttyS0] enabled
+Mount-cache hash table entries: 512
+NET: Registered protocol family 16
+bio: create slab <bio-0> at 0
+cfg80211: Calling CRDA to update world regulatory domain
+NET: Registered protocol family 2
+TCP: Hash tables configured (established 1024 bind 1024)
+TCP reno registered
+ttyS0 at MMIO 0xa0004000 (irq = 1) is a KA2000
+msgmni has been set to 58
+loop: module loaded
+TCP cubic registered
+NET: Registered protocol family 17
+lib80211: common routines for IEEE802.11 drivers
+
+starting pid 27, tty '/dev/console': '/etc/init.d/rcS'
+KeyASIC WifiSD console ...
+Sun Jan  1 00:00:00 UTC 2012
+ka2000_sdhc: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+(0>0)switch_modules
+max_blk_size=512, max_blk_count=8, max_req_size=32768
+init bomb irq
+req irq 40 (1000000)
+req irq 43 (40)
+req irq 41 (43)
+ka_sdhc_drv_init
+bw = 22
+mmc0: new SDHC card at address b368
+mmcblk0: mmc0:b368 CAR 15.0 GiB 
+ mmcblk0:bootsec @ 2000
+ p1
+FAT sec 7f8 sz 3c04 #2 rtdir 8000 csz 10
+wsd to sd
+wsd to sd
+FAT sec 7f8 sz 3c04 #2 rtdir 8000 csz 10
+cid = CID:71d500df1a0000102020434453454a74
+Transcend Card
+Transcend Card
+gen_boa_passwd.sh - USER=admin PASS=admin
+rcS done
+start boa
+
+-----------------------------------------------
+  Production mode-VER. version_147_FEB192013_TE.
+-----------------------------------------------
+
+sleep disable
+[01/Jan/2012:00:00:04 +0000] boa: server version Boa/0.94.14rc21
+[01/Jan/2012:00:00:04 +0000] boa: server built Feb 25 2013 at 15:18:57.
+[01/Jan/2012:00:00:04 +0000] ..setup AP mode start
+boa: starting server pid=75, port 80
+/usr/bin/auto_off.sh: stop
+rmmod: can't unload 'ar6000': unknown symbol in module, or unknown parameter
+ifconfig: SIOCGIFFLAGS: No such device
+sdio wakeuplo        no wireless extensions.
+
+
+mmc1: new SDIO card at address 0001
+rm: can't remove '/tmp/iwconfig_maln0.txt': No such file or directory
+AR6000: configuration opcode 7 is only used for RTOS systems, not Linux systemsifconfig: SIOCGIFFLAGS: No such device
+
+ath6k/AR6003/hw2.1.1/athwlan.bin firmware will be loaded
+AR6K: ** HIF layer does not support scatter requests (17) 
+wmi_control_rx() : Unknown id 0x101e
+Add Filter 0 = 01:00:5e:00:00:01
+Keep Filter 0 = 01:00:5e:00:00:01
+Keep Filter 0 = 01:00:5e:00:00:01
+Limit maximum connection count to 3 
+/usr/bin/auto_off.sh: start
+/usr/bin/kcard_app.sh: start
+kcard_startup: Set call interval 10
+KCARD: Notify driver about pid 139
+(0>1)KCARD: Log = 0, Diff Disable, Path /tmp/filediff
+Auto OFF 0 seconds
+KCARD: Debounce = 1, WiFi Hide Disable, Skip Disable
+WiFi 0 can't less then 60 seconds
+KCARD: waitting for sig
+dcim c 8 @a060, f:27f8 (off 4ff01c)
+Folder: 199_WIFIWSD00003 (5f393931 49464957)
+Img1: WSD00003 (30445357 33303030 sz 79cdh)
+user_dir:(5f333231 20505446)(00000000 00000000)
+ctrlimg c 1c0183 @1c0b810, f:5ffb (off bff608)
+
+3 c 1c0187-1c018b @1c0b850 f:5ffb(o:7)
+fat cnt 4, x0, pBuf1 c17f2400, pBuf2 0(0)
+misc c 1c0184 @1c0b820
+bomb reg2 1c0b820 - 1c0b825
+bomb reg 27f8 - 63fc
+st 1c0181, 1:7, 2:0, 3:0, 4:0, 5:0
+bomb reg 27f8 - 63fc
+(1>0)Decompress libcrypto ...
+
+Please press Enter to activate this console. 
+
+starting pid 152, tty '/dev/ttyS0': '-/bin/ash '
+# 
